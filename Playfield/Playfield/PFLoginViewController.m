@@ -9,6 +9,7 @@
 #import "PFLoginViewController.h"
 
 #import "PFLoginView.h"
+#import "PFApiManager.h"
 
 @implementation PFLoginViewController
 
@@ -24,7 +25,8 @@
 
 - (void) handleLogin:(NSString *)userName withPassword:(NSString *)password {
     //TODO; handle logging in here
-    return;
+//    return;
+    [[PFApiManager sharedInstance] authenticate:userName withPassword:password];
 }
 
 @end

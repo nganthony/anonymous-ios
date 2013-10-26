@@ -19,9 +19,34 @@
 		6510A455180B698A0034295B /* PFStartupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A454180B698A0034295B /* PFStartupViewController.m */; };
 		6510A458180B6A020034295B /* PFLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A457180B6A020034295B /* PFLoginView.m */; };
 		6510A45B180B6A890034295B /* PFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A45A180B6A890034295B /* PFRootViewController.m */; };
+		656DA3F3181463B400F684B8 /* libAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65803983181460A00083088A /* libAPI.a */; };
 		65C331C6180B6F2B0003C6A2 /* PFStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C5180B6F2B0003C6A2 /* PFStartView.m */; };
 		65C331C9180B81570003C6A2 /* PFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C8180B81570003C6A2 /* PFLoginViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		656DA3F4181463FE00F684B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6580397D181460A00083088A /* API.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 65803920181373380083088A;
+			remoteInfo = API;
+		};
+		65803982181460A00083088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6580397D181460A00083088A /* API.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65803921181373380083088A;
+			remoteInfo = API;
+		};
+		65803984181460A00083088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6580397D181460A00083088A /* API.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65803931181373380083088A;
+			remoteInfo = APITests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6510A433180B67C70034295B /* Playfield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playfield.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +68,14 @@
 		6510A457180B6A020034295B /* PFLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoginView.m; sourceTree = "<group>"; };
 		6510A459180B6A890034295B /* PFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRootViewController.h; sourceTree = "<group>"; };
 		6510A45A180B6A890034295B /* PFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRootViewController.m; sourceTree = "<group>"; };
+		6580397D181460A00083088A /* API.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = API.xcodeproj; path = "../../anonymous-ios-api/API/API.xcodeproj"; sourceTree = "<group>"; };
 		65C331C4180B6F2B0003C6A2 /* PFStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFStartView.h; sourceTree = "<group>"; };
 		65C331C5180B6F2B0003C6A2 /* PFStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFStartView.m; sourceTree = "<group>"; };
 		65C331C7180B81570003C6A2 /* PFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLoginViewController.h; sourceTree = "<group>"; };
 		65C331C8180B81570003C6A2 /* PFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoginViewController.m; sourceTree = "<group>"; };
+		65FEAC7E181467B6006A41DD /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		65FEAC7F181467B6006A41DD /* AuthenticationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationHandler.h; sourceTree = "<group>"; };
+		65FEAC80181467B6006A41DD /* PFApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFApiManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656DA3F3181463B400F684B8 /* libAPI.a in Frameworks */,
 				6510A437180B67C70034295B /* UIKit.framework in Frameworks */,
 				6510A439180B67C70034295B /* Foundation.framework in Frameworks */,
 				6510A43B180B67C70034295B /* CoreGraphics.framework in Frameworks */,
@@ -66,9 +96,11 @@
 		6510A42A180B67C60034295B = {
 			isa = PBXGroup;
 			children = (
+				65FEAC7D181467B6006A41DD /* PlayField-Api */,
 				6510A43C180B67C70034295B /* Playfield */,
 				6510A435180B67C70034295B /* Frameworks */,
 				6510A434180B67C70034295B /* Products */,
+				6580397D181460A00083088A /* API.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +156,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6580397E181460A00083088A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65803983181460A00083088A /* libAPI.a */,
+				65803985181460A00083088A /* APITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65FEAC7D181467B6006A41DD /* PlayField-Api */ = {
+			isa = PBXGroup;
+			children = (
+				65FEAC7E181467B6006A41DD /* API.h */,
+				65FEAC7F181467B6006A41DD /* AuthenticationHandler.h */,
+				65FEAC80181467B6006A41DD /* PFApiManager.h */,
+			);
+			name = "PlayField-Api";
+			path = "../../PlayField-Api";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				656DA3F5181463FE00F684B8 /* PBXTargetDependency */,
 			);
 			name = Playfield;
 			productName = Playfield;
@@ -164,12 +217,35 @@
 			mainGroup = 6510A42A180B67C60034295B;
 			productRefGroup = 6510A434180B67C70034295B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6580397E181460A00083088A /* Products */;
+					ProjectRef = 6580397D181460A00083088A /* API.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6510A432180B67C60034295B /* Playfield */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		65803983181460A00083088A /* libAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAPI.a;
+			remoteRef = 65803982181460A00083088A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65803985181460A00083088A /* APITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APITests.xctest;
+			remoteRef = 65803984181460A00083088A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6510A431180B67C60034295B /* Resources */ = {
@@ -201,6 +277,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656DA3F5181463FE00F684B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = API;
+			targetProxy = 656DA3F4181463FE00F684B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6510A43F180B67C70034295B /* InfoPlist.strings */ = {
@@ -275,6 +359,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Playfield/Playfield-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)",
+				);
 				INFOPLIST_FILE = "Playfield/Playfield-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +376,11 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Playfield/Playfield-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)",
+				);
 				INFOPLIST_FILE = "Playfield/Playfield-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
