@@ -10,6 +10,7 @@
 
 #import "PFLoginView.h"
 #import "PFApiManager.h"
+#import "UserCredentials.h"
 
 @implementation PFLoginViewController
 
@@ -24,9 +25,8 @@
 #pragma mark PFLoginViewDelegate
 
 - (void) handleLogin:(NSString *)userName withPassword:(NSString *)password {
-    //TODO; handle logging in here
-//    return;
-    [[PFApiManager sharedInstance] authenticate:userName withPassword:password];
+    UserCredentials *userCredentials = [[UserCredentials alloc] initWithUsername:userName password:password];
+    [[PFApiManager sharedInstance] login:userCredentials];
 }
 
 @end
