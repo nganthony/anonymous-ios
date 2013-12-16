@@ -13,4 +13,6 @@
 @interface PFRootViewController : UINavigationController <PFStartViewDelegate>
 
 - (id) initWithStartupController;
+
++(void)navigateToZoneList;
 @end

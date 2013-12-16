@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 #import "PFLoginView.h"
+#import "UserResource.h"
 
-@interface PFLoginViewController : UIViewController <PFLoginViewDelegate>
+@interface PFLoginViewController : UIViewController <PFLoginViewDelegate, UserDelegate>
 
 @end

@@ -10,8 +10,11 @@
 
 #import "PFStartupViewController.h"
 #import "PFLoginViewController.h"
+#import "PFZoneListViewController.h"
 
 @implementation PFRootViewController
+
+//TODO:Make this a singleton
 
 - (id) initWithStartupController {
     PFStartupViewController *startupViewController = [[PFStartupViewController alloc] init];
@@ -22,6 +25,11 @@
     return self;
 }
 
++ (void)navigateToZoneList {
+    if (self) {
+        
+    }
+}
 #pragma mark -
 #pragma mark PFStartViewDelegate
 

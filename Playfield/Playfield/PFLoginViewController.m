@@ -11,6 +11,7 @@
 #import "PFLoginView.h"
 #import "PFApiManager.h"
 #import "UserCredentials.h"
+#import "UserResource.h"
 
 @implementation PFLoginViewController
 
@@ -26,7 +27,23 @@
 
 - (void) handleLogin:(NSString *)userName withPassword:(NSString *)password {
     UserCredentials *userCredentials = [[UserCredentials alloc] initWithUsername:userName password:password];
+    UserResource *userResource = [[UserResource alloc] init];
+    userResource.delegate = self;
     [[PFApiManager sharedInstance] login:userCredentials];
+}
+
+#pragma mark UserDelegate
+
+- (void)responseWithUser:(User *)user {
+    // TODO store user object and 
+}
+
+- (void)responseWithError:(HttpError *)error {
+    //TODO handle error
+}
+
+- (void)requestNotMade {
+    //TODO handle request not made
 }
 
 @end
