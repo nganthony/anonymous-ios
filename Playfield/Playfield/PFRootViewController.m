@@ -14,22 +14,39 @@
 
 @implementation PFRootViewController
 
-//TODO:Make this a singleton
+PFRootViewController *sharedRootViewController;
 
-- (id) initWithStartupController {
-    PFStartupViewController *startupViewController = [[PFStartupViewController alloc] init];
-    self = [super initWithRootViewController:startupViewController];
-    if (self) {
-        [self.navigationItem setTitle:@"PlayField"];
++ (id)sharedInstance {
+    if (!sharedRootViewController) {
+        sharedRootViewController = [[self alloc] init];
     }
-    return self;
+    return sharedRootViewController;
 }
 
-+ (void)navigateToZoneList {
-    if (self) {
-        
+- (void)navigateToZoneList {
+    if (sharedRootViewController) {
+        PFZoneListViewController *zoneListViewController = [[PFZoneListViewController alloc] init];
+        [zoneListViewController.navigationItem setTitle:@"Pick A Zone"];
+        [sharedRootViewController pushViewController:zoneListViewController animated:YES];
     }
 }
+
+- (void)navigateToLogin {
+    if (sharedRootViewController) {
+        PFLoginViewController *loginViewController = [[PFLoginViewController alloc] init];
+        [loginViewController.navigationItem setTitle:@"Login"];
+        [sharedRootViewController pushViewController:loginViewController animated:YES];
+    }
+}
+
+- (void)navigateToStartup {
+    if (sharedRootViewController) {
+        PFStartupViewController *startUpViewController = [[PFStartupViewController alloc] init];
+        [startUpViewController.navigationItem setTitle:@"PlayField"];
+        [sharedRootViewController pushViewController:startUpViewController animated:YES];
+    }
+}
+
 #pragma mark -
 #pragma mark PFStartViewDelegate
 

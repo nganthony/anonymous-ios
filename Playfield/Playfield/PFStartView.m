@@ -7,6 +7,7 @@
 //
 
 #import "PFStartView.h"
+#import "PFRootViewController.h"
 
 @implementation PFStartView
 
@@ -34,7 +35,8 @@ UIButton *_registerButton;
 }
 
 - (void) loginWasPressed {
-    [self.delegate handleLoginPressed];
+//    [self.delegate handleLoginPressed];
+    [[PFRootViewController sharedInstance] navigateToLogin];
 }
 
 - (void) registerWasPressed {

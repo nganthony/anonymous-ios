@@ -10,6 +10,7 @@
 
 #import "PFLoginView.h"
 #import "PFApiManager.h"
+#import "PFRootViewController.h"
 #import "UserCredentials.h"
 #import "UserResource.h"
 
@@ -29,21 +30,24 @@
     UserCredentials *userCredentials = [[UserCredentials alloc] initWithUsername:userName password:password];
     UserResource *userResource = [[UserResource alloc] init];
     userResource.delegate = self;
-    [[PFApiManager sharedInstance] login:userCredentials];
+    [userResource login:userCredentials];
 }
 
 #pragma mark UserDelegate
 
 - (void)responseWithUser:(User *)user {
-    // TODO store user object and 
+    // TODO store user object and
+    [[PFRootViewController sharedInstance] navigateToZoneList];
 }
 
 - (void)responseWithError:(HttpError *)error {
     //TODO handle error
+    return;
 }
 
 - (void)requestNotMade {
     //TODO handle request not made
+    return;
 }
 
 @end

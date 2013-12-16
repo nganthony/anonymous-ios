@@ -17,11 +17,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    PFRootViewController *rootViewController = [PFRootViewController sharedInstance];
+    [rootViewController navigateToStartup];
+    self.window.rootViewController = rootViewController;
     
-    PFRootViewController *navController = [[PFRootViewController alloc] initWithStartupController];
-    self.window.rootViewController = navController;
-    
-    [self.window addSubview:[navController view]];
+    [self.window addSubview:[rootViewController view]];
     [self.window makeKeyAndVisible];
     return YES;
 }

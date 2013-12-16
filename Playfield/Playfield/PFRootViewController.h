@@ -12,7 +12,11 @@
 
 @interface PFRootViewController : UINavigationController <PFStartViewDelegate>
 
-- (id) initWithStartupController;
++ (id)sharedInstance;
 
-+(void)navigateToZoneList;
+- (void)navigateToZoneList;
+
+- (void)navigateToLogin;
+
+- (void)navigateToStartup;
 @end
