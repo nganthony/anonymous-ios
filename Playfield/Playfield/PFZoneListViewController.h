@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZoneResource.h"
 
-@interface PFZoneListViewController : UITableViewController
+@interface PFZoneListViewController : UITableViewController <ZoneDelegate>
 
 @end

@@ -19,6 +19,8 @@
 		6510A455180B698A0034295B /* PFStartupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A454180B698A0034295B /* PFStartupViewController.m */; };
 		6510A458180B6A020034295B /* PFLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A457180B6A020034295B /* PFLoginView.m */; };
 		6510A45B180B6A890034295B /* PFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6510A45A180B6A890034295B /* PFRootViewController.m */; };
+		65216FC4185F9CFC00DD6776 /* ZoneResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65216FC1185F9CED00DD6776 /* ZoneResource.m */; };
+		65216FC71860F6B300DD6776 /* PFZoneListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65216FC61860F6B300DD6776 /* PFZoneListViewCell.m */; };
 		653811A91846E92500CB88CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6538115E1846E92500CB88CC /* .gitignore */; };
 		653811AA1846E92500CB88CC /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 653811631846E92500CB88CC /* API.m */; };
 		653811AB1846E92500CB88CC /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 653811651846E92500CB88CC /* Comment.m */; };
@@ -91,6 +93,10 @@
 		6510A457180B6A020034295B /* PFLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoginView.m; sourceTree = "<group>"; };
 		6510A459180B6A890034295B /* PFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRootViewController.h; sourceTree = "<group>"; };
 		6510A45A180B6A890034295B /* PFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRootViewController.m; sourceTree = "<group>"; };
+		65216FC0185F9CED00DD6776 /* ZoneResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoneResource.h; sourceTree = "<group>"; };
+		65216FC1185F9CED00DD6776 /* ZoneResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoneResource.m; sourceTree = "<group>"; };
+		65216FC51860F6B300DD6776 /* PFZoneListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFZoneListViewCell.h; sourceTree = "<group>"; };
+		65216FC61860F6B300DD6776 /* PFZoneListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFZoneListViewCell.m; sourceTree = "<group>"; };
 		6538115E1846E92500CB88CC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		653811611846E92500CB88CC /* API-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "API-Prefix.pch"; sourceTree = "<group>"; };
 		653811621846E92500CB88CC /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -220,6 +226,8 @@
 				65C331C8180B81570003C6A2 /* PFLoginViewController.m */,
 				653811D018499AFE00CB88CC /* PFZoneListViewController.h */,
 				653811D118499AFE00CB88CC /* PFZoneListViewController.m */,
+				65216FC51860F6B300DD6776 /* PFZoneListViewCell.h */,
+				65216FC61860F6B300DD6776 /* PFZoneListViewCell.m */,
 			);
 			path = Playfield;
 			sourceTree = "<group>";
@@ -299,6 +307,8 @@
 				653811831846E92500CB88CC /* UserResource.m */,
 				653811841846E92500CB88CC /* Zone.h */,
 				653811851846E92500CB88CC /* Zone.m */,
+				65216FC0185F9CED00DD6776 /* ZoneResource.h */,
+				65216FC1185F9CED00DD6776 /* ZoneResource.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -487,6 +497,7 @@
 				653811C61846E92500CB88CC /* JSONModel+networking.m in Sources */,
 				653811BB1846E92500CB88CC /* Zone.m in Sources */,
 				653811C21846E92500CB88CC /* JSONModelError.m in Sources */,
+				65216FC71860F6B300DD6776 /* PFZoneListViewCell.m in Sources */,
 				653811B31846E92500CB88CC /* Pagination.m in Sources */,
 				653811AC1846E92500CB88CC /* CommentInfo.m in Sources */,
 				653811C11846E92500CB88CC /* JSONModelClassProperty.m in Sources */,
@@ -496,6 +507,7 @@
 				653811AF1846E92500CB88CC /* HttpRequest.m in Sources */,
 				6510A45B180B6A890034295B /* PFRootViewController.m in Sources */,
 				653811B61846E92500CB88CC /* PostInfo.m in Sources */,
+				65216FC4185F9CFC00DD6776 /* ZoneResource.m in Sources */,
 				653811BF1846E92500CB88CC /* JSONModel.m in Sources */,
 				653811B91846E92500CB88CC /* UserRegistrationInfo.m in Sources */,
 				653811B81846E92500CB88CC /* UserCredentials.m in Sources */,

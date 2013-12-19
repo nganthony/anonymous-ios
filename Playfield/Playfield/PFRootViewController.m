@@ -27,6 +27,7 @@ PFRootViewController *sharedRootViewController;
     if (sharedRootViewController) {
         PFZoneListViewController *zoneListViewController = [[PFZoneListViewController alloc] init];
         [zoneListViewController.navigationItem setTitle:@"Pick A Zone"];
+        [zoneListViewController.navigationItem setHidesBackButton:YES animated:YES];
         [sharedRootViewController pushViewController:zoneListViewController animated:YES];
     }
 }
