@@ -56,6 +56,8 @@ NSArray *_zoneList;
     return 0;
 }
 
+#pragma mark - TableView Delegate
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
