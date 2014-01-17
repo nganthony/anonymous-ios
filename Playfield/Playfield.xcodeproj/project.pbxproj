@@ -54,6 +54,7 @@
 		653811D218499AFE00CB88CC /* PFZoneListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653811D118499AFE00CB88CC /* PFZoneListViewController.m */; };
 		65C331C6180B6F2B0003C6A2 /* PFStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C5180B6F2B0003C6A2 /* PFStartView.m */; };
 		65C331C9180B81570003C6A2 /* PFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C8180B81570003C6A2 /* PFLoginViewController.m */; };
+		929384941889D09B00CCF463 /* app_icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 929384931889D09B00CCF463 /* app_icon_120x120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,7 @@
 		65C331C5180B6F2B0003C6A2 /* PFStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFStartView.m; sourceTree = "<group>"; };
 		65C331C7180B81570003C6A2 /* PFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLoginViewController.h; sourceTree = "<group>"; };
 		65C331C8180B81570003C6A2 /* PFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoginViewController.m; sourceTree = "<group>"; };
+		929384931889D09B00CCF463 /* app_icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_120x120.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 		6510A43D180B67C70034295B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				929384931889D09B00CCF463 /* app_icon_120x120.png */,
 				6510A43E180B67C70034295B /* Playfield-Info.plist */,
 				6510A43F180B67C70034295B /* InfoPlist.strings */,
 				6510A442180B67C70034295B /* main.m */,
@@ -461,6 +464,7 @@
 				6510A441180B67C70034295B /* InfoPlist.strings in Resources */,
 				6510A449180B67C70034295B /* Default.png in Resources */,
 				6510A44B180B67C70034295B /* Default@2x.png in Resources */,
+				929384941889D09B00CCF463 /* app_icon_120x120.png in Resources */,
 				653811C91846E92500CB88CC /* README.md in Resources */,
 				6510A44D180B67C70034295B /* Default-568h@2x.png in Resources */,
 			);
