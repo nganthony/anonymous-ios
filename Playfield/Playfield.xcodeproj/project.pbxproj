@@ -54,7 +54,12 @@
 		653811D218499AFE00CB88CC /* PFZoneListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653811D118499AFE00CB88CC /* PFZoneListViewController.m */; };
 		65C331C6180B6F2B0003C6A2 /* PFStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C5180B6F2B0003C6A2 /* PFStartView.m */; };
 		65C331C9180B81570003C6A2 /* PFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C331C8180B81570003C6A2 /* PFLoginViewController.m */; };
-		929384941889D09B00CCF463 /* app_icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 929384931889D09B00CCF463 /* app_icon_120x120.png */; };
+		92306C00189432B300F060CB /* PFRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92306BFF189432B300F060CB /* PFRegisterView.m */; };
+		92306C03189432D600F060CB /* PFRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92306C02189432D600F060CB /* PFRegisterViewController.m */; };
+		92306C0718947A0000F060CB /* app_icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 92306C0618947A0000F060CB /* app_icon_120x120.png */; };
+		92306C0918947A0F00F060CB /* default_profile_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92306C0818947A0F00F060CB /* default_profile_photo.png */; };
+		92306C0C18947A1800F060CB /* login_app_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 92306C0A18947A1800F060CB /* login_app_title.png */; };
+		92306C0D18947A1800F060CB /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 92306C0B18947A1800F060CB /* login_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,7 +170,14 @@
 		65C331C5180B6F2B0003C6A2 /* PFStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFStartView.m; sourceTree = "<group>"; };
 		65C331C7180B81570003C6A2 /* PFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLoginViewController.h; sourceTree = "<group>"; };
 		65C331C8180B81570003C6A2 /* PFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLoginViewController.m; sourceTree = "<group>"; };
-		929384931889D09B00CCF463 /* app_icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_120x120.png; sourceTree = "<group>"; };
+		92306BFE189432B300F060CB /* PFRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRegisterView.h; sourceTree = "<group>"; };
+		92306BFF189432B300F060CB /* PFRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRegisterView.m; sourceTree = "<group>"; };
+		92306C01189432D600F060CB /* PFRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRegisterViewController.h; sourceTree = "<group>"; };
+		92306C02189432D600F060CB /* PFRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRegisterViewController.m; sourceTree = "<group>"; };
+		92306C0618947A0000F060CB /* app_icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon_120x120.png; path = Images/app_icon_120x120.png; sourceTree = "<group>"; };
+		92306C0818947A0F00F060CB /* default_profile_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default_profile_photo.png; path = Images/default_profile_photo.png; sourceTree = "<group>"; };
+		92306C0A18947A1800F060CB /* login_app_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_app_title.png; path = Images/login_app_title.png; sourceTree = "<group>"; };
+		92306C0B18947A1800F060CB /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_background.png; path = Images/login_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,23 +225,10 @@
 		6510A43C180B67C70034295B /* Playfield */ = {
 			isa = PBXGroup;
 			children = (
+				922FACA11892051F0014B680 /* Images */,
 				6510A445180B67C70034295B /* PFAppDelegate.h */,
 				6510A446180B67C70034295B /* PFAppDelegate.m */,
 				6510A43D180B67C70034295B /* Supporting Files */,
-				6510A453180B698A0034295B /* PFStartupViewController.h */,
-				6510A454180B698A0034295B /* PFStartupViewController.m */,
-				6510A456180B6A020034295B /* PFLoginView.h */,
-				6510A457180B6A020034295B /* PFLoginView.m */,
-				6510A459180B6A890034295B /* PFRootViewController.h */,
-				6510A45A180B6A890034295B /* PFRootViewController.m */,
-				65C331C4180B6F2B0003C6A2 /* PFStartView.h */,
-				65C331C5180B6F2B0003C6A2 /* PFStartView.m */,
-				65C331C7180B81570003C6A2 /* PFLoginViewController.h */,
-				65C331C8180B81570003C6A2 /* PFLoginViewController.m */,
-				653811D018499AFE00CB88CC /* PFZoneListViewController.h */,
-				653811D118499AFE00CB88CC /* PFZoneListViewController.m */,
-				65216FC51860F6B300DD6776 /* PFZoneListViewCell.h */,
-				65216FC61860F6B300DD6776 /* PFZoneListViewCell.m */,
 			);
 			path = Playfield;
 			sourceTree = "<group>";
@@ -237,7 +236,8 @@
 		6510A43D180B67C70034295B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				929384931889D09B00CCF463 /* app_icon_120x120.png */,
+				922FACA0189201420014B680 /* View */,
+				922FAC9D1892013A0014B680 /* Controller */,
 				6510A43E180B67C70034295B /* Playfield-Info.plist */,
 				6510A43F180B67C70034295B /* InfoPlist.strings */,
 				6510A442180B67C70034295B /* main.m */,
@@ -385,6 +385,49 @@
 			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
+		922FAC9D1892013A0014B680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				653811D018499AFE00CB88CC /* PFZoneListViewController.h */,
+				653811D118499AFE00CB88CC /* PFZoneListViewController.m */,
+				65C331C7180B81570003C6A2 /* PFLoginViewController.h */,
+				65C331C8180B81570003C6A2 /* PFLoginViewController.m */,
+				6510A459180B6A890034295B /* PFRootViewController.h */,
+				6510A45A180B6A890034295B /* PFRootViewController.m */,
+				6510A453180B698A0034295B /* PFStartupViewController.h */,
+				6510A454180B698A0034295B /* PFStartupViewController.m */,
+				92306C01189432D600F060CB /* PFRegisterViewController.h */,
+				92306C02189432D600F060CB /* PFRegisterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		922FACA0189201420014B680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65C331C4180B6F2B0003C6A2 /* PFStartView.h */,
+				65C331C5180B6F2B0003C6A2 /* PFStartView.m */,
+				65216FC51860F6B300DD6776 /* PFZoneListViewCell.h */,
+				65216FC61860F6B300DD6776 /* PFZoneListViewCell.m */,
+				6510A456180B6A020034295B /* PFLoginView.h */,
+				6510A457180B6A020034295B /* PFLoginView.m */,
+				92306BFE189432B300F060CB /* PFRegisterView.h */,
+				92306BFF189432B300F060CB /* PFRegisterView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		922FACA11892051F0014B680 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				92306C0A18947A1800F060CB /* login_app_title.png */,
+				92306C0B18947A1800F060CB /* login_background.png */,
+				92306C0818947A0F00F060CB /* default_profile_photo.png */,
+				92306C0618947A0000F060CB /* app_icon_120x120.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,9 +505,12 @@
 			files = (
 				653811A91846E92500CB88CC /* .gitignore in Resources */,
 				6510A441180B67C70034295B /* InfoPlist.strings in Resources */,
+				92306C0C18947A1800F060CB /* login_app_title.png in Resources */,
+				92306C0918947A0F00F060CB /* default_profile_photo.png in Resources */,
 				6510A449180B67C70034295B /* Default.png in Resources */,
+				92306C0D18947A1800F060CB /* login_background.png in Resources */,
 				6510A44B180B67C70034295B /* Default@2x.png in Resources */,
-				929384941889D09B00CCF463 /* app_icon_120x120.png in Resources */,
+				92306C0718947A0000F060CB /* app_icon_120x120.png in Resources */,
 				653811C91846E92500CB88CC /* README.md in Resources */,
 				6510A44D180B67C70034295B /* Default-568h@2x.png in Resources */,
 			);
@@ -496,6 +542,7 @@
 				653811C01846E92500CB88CC /* JSONModelArray.m in Sources */,
 				653811B11846E92500CB88CC /* Message.m in Sources */,
 				653811D218499AFE00CB88CC /* PFZoneListViewController.m in Sources */,
+				92306C00189432B300F060CB /* PFRegisterView.m in Sources */,
 				6510A455180B698A0034295B /* PFStartupViewController.m in Sources */,
 				6510A458180B6A020034295B /* PFLoginView.m in Sources */,
 				653811C61846E92500CB88CC /* JSONModel+networking.m in Sources */,
@@ -515,6 +562,7 @@
 				653811BF1846E92500CB88CC /* JSONModel.m in Sources */,
 				653811B91846E92500CB88CC /* UserRegistrationInfo.m in Sources */,
 				653811B81846E92500CB88CC /* UserCredentials.m in Sources */,
+				92306C03189432D600F060CB /* PFRegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

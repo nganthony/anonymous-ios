@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     PFRootViewController *rootViewController = [PFRootViewController sharedInstance];
-    [rootViewController navigateToStartup];
+    [rootViewController navigateToLogin];
     self.window.rootViewController = rootViewController;
     
     [self.window addSubview:[rootViewController view]];

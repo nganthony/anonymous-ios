@@ -13,6 +13,7 @@
 #import "PFRootViewController.h"
 #import "UserCredentials.h"
 #import "UserResource.h"
+#import "PFRegisterViewController.h"
 
 @implementation PFLoginViewController
 
@@ -23,7 +24,11 @@
     [self.view addSubview:loginView];
 }
 
-#pragma mark - 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 #pragma mark PFLoginViewDelegate
 
 - (void) handleLogin:(NSString *)userName withPassword:(NSString *)password {
@@ -31,6 +36,10 @@
     UserResource *userResource = [[UserResource alloc] init];
     userResource.delegate = self;
     [userResource login:userCredentials];
+}
+
+- (void) handleRegister {
+    [[PFRootViewController sharedInstance] navigateToRegister];
 }
 
 #pragma mark UserDelegate

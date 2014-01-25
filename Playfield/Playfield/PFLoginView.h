@@ -11,6 +11,7 @@
 @protocol PFLoginViewDelegate <NSObject>
 
 - (void)handleLogin:(NSString *)userName withPassword:(NSString *)password;
+- (void)handleRegister;
 
 @end
 

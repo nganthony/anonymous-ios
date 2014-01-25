@@ -11,6 +11,7 @@
 #import "PFStartupViewController.h"
 #import "PFLoginViewController.h"
 #import "PFZoneListViewController.h"
+#import "PFRegisterViewController.h"
 
 @implementation PFRootViewController
 
@@ -37,6 +38,14 @@ PFRootViewController *sharedRootViewController;
         PFLoginViewController *loginViewController = [[PFLoginViewController alloc] init];
         [loginViewController.navigationItem setTitle:@"Login"];
         [sharedRootViewController pushViewController:loginViewController animated:YES];
+    }
+}
+
+- (void)navigateToRegister {
+    if (sharedRootViewController) {
+        PFRegisterViewController *registerViewController = [[PFRegisterViewController alloc] init];
+        [registerViewController.navigationItem setTitle:@"Register"];
+        [sharedRootViewController pushViewController:registerViewController animated:YES];
     }
 }
 

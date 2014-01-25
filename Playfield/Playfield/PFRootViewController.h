@@ -18,5 +18,7 @@
 
 - (void)navigateToLogin;
 
+- (void)navigateToRegister;
+
 - (void)navigateToStartup;
 @end
